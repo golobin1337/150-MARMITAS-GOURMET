@@ -83,8 +83,49 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.target === modal) fecharModal();
     });
   }
-  // fecha com a tecla ESC
+  // Lightbox: ampliar imagens das prévias e dos depoimentos
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+  var lightboxClose = document.getElementById('lightbox-close');
+
+  function abrirLightbox(src, alt) {
+    if (!lightbox) return;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function fecharLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  if (lightbox) {
+    document.querySelectorAll('.rc-img, .result-img').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var img = el.querySelector('img');
+        if (img) abrirLightbox(img.src, img.alt);
+      });
+    });
+    // clicar em qualquer lugar (fundo ou imagem) fecha
+    lightbox.addEventListener('click', fecharLightbox);
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', function (e) {
+        e.stopPropagation();
+        fecharLightbox();
+      });
+    }
+  }
+
+  // fecha com a tecla ESC (popup e lightbox)
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') fecharModal();
+    if (e.key === 'Escape') {
+      fecharModal();
+      fecharLightbox();
+    }
   });
 });
