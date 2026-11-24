@@ -138,6 +138,7 @@ img.hero-img{width:100%;object-fit:cover;}
   font-weight:700;
   text-transform:uppercase;
   letter-spacing:.4px;
+  text-align:center;
   text-decoration:none;
   cursor:pointer;
   box-shadow:0 8px 22px rgba(107,142,35,.42);
