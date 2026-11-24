@@ -128,4 +128,21 @@ document.addEventListener('DOMContentLoaded', function () {
       fecharLightbox();
     }
   });
+
+  // Curtir depoimentos (alterna curtido + contador)
+  document.querySelectorAll('.review .ractions').forEach(function (actions) {
+    var curtir = actions.querySelector('span');
+    if (!curtir) return;
+    curtir.classList.add('curtir');
+    var base = 20 + Math.floor(Math.random() * 60); // curtidas iniciais
+    var label = document.createElement('span');
+    label.className = 'curtir-count';
+    label.textContent = base;
+    curtir.appendChild(label);
+
+    curtir.addEventListener('click', function () {
+      var liked = curtir.classList.toggle('liked');
+      label.textContent = liked ? base + 1 : base;
+    });
+  });
 });

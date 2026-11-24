@@ -466,6 +466,10 @@ img.hero-img{width:100%;object-fit:cover;}
 }
 .review .ractions span{display:inline-flex;align-items:center;gap:5px;}
 .review .ractions svg{width:14px;height:14px;}
+.review .ractions .curtir{cursor:pointer;user-select:none;transition:color .15s;}
+.review .ractions .curtir:hover{color:#6a7480;}
+.review .ractions .curtir.liked{color:var(--green);}
+.review .ractions .curtir.liked svg{fill:var(--green);stroke:var(--green);}
 
 /* ---------- FAQ ---------- */
 .faq{padding:42px 24px;}
