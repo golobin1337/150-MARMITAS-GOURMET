@@ -28,7 +28,7 @@
       <p class="price-label">por apenas</p>
       <p class="price-now">R$ 10,00</p>
 
-      <a href="#" class="btn-cta">
+      <a href="#" class="btn-cta" data-open-upsell>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         QUERO MINHAS 150 MARMITAS GOURMET
       </a>
@@ -68,41 +68,24 @@
   <div class="carousel">
     <div class="recipe-card">
       <div class="rc-img"><img src="assets/ef9068e4_1380_4805_87ae_ac6c10120cc4_1.webp" alt="Prévia 1 — Estrogonofe de Frango Cremoso"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Toque para ampliar</div></div>
-      <p class="rc-title">Prévia 1 — Estrogonofe de Frango Cremoso</p>
-      <p class="rc-desc">Frango macio, molho cremoso e arroz soltinho. Uma combinação clássica para deixar o almoço da semana muito mais gostoso.</p>
-      <p class="rc-cap">Página interna do livro — Toque para ampliar.</p>
     </div>
     <div class="recipe-card">
       <div class="rc-img"><img src="assets/b8c676ca_06e2_430a_8546_4f5efdedf73e_1.webp" alt="Prévia 2 — Escondidinho Gourmet de Carne Moída"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Toque para ampliar</div></div>
-      <p class="rc-title">Prévia 2 — Escondidinho Gourmet de Carne Moída</p>
-      <p class="rc-desc">Carne moída bem temperada, purê cremoso e uma camada de queijo gratinado. Sabor de comida caseira caprichada!</p>
-      <p class="rc-cap">Página interna do livro — Toque para ampliar.</p>
     </div>
     <div class="recipe-card">
       <div class="rc-img"><img src="assets/15557a4d_432c_4dca_9a19_2cc4a6909c83_1.webp" alt="Prévia 3 — Frango ao Molho de Mostarda com Arroz e Legumes"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Toque para ampliar</div></div>
-      <p class="rc-title">Prévia 3 — Frango ao Molho de Mostarda com Arroz e Legumes</p>
-      <p class="rc-desc">Frango suculento com molho especial, acompanhado de arroz e legumes. Um prato bonito, simples e cheio de sabor.</p>
-      <p class="rc-cap">Página interna do livro — Toque para ampliar.</p>
     </div>
     <div class="recipe-card">
       <div class="ph">[PLACEHOLDER — PRÉVIA 4]<div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Toque para ampliar</div></div>
-      <p class="rc-title">Prévia 4 — Penne à Bolonhesa com Queijo Gratinado</p>
-      <p class="rc-desc">Macarrão envolvido em molho de carne moída, tomate e queijo. Uma marmita que parece ter saído de um restaurante.</p>
-      <p class="rc-cap">Página interna do livro — Toque para ampliar.</p>
     </div>
     <div class="recipe-card">
       <div class="ph">[PLACEHOLDER — PRÉVIA 5]<div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Toque para ampliar</div></div>
-      <p class="rc-title">Prévia 5 — Almôndegas ao Molho com Purê Cremoso</p>
-      <p class="rc-desc">Almôndegas macias, molho de tomate encorpado e purê de batatas. Uma combinação que transforma o almoço do dia a dia.</p>
-      <p class="rc-cap">Página interna do livro — Toque para ampliar.</p>
     </div>
     <div class="recipe-card">
       <div class="ph">[PLACEHOLDER — PRÉVIA 6]<div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Toque para ampliar</div></div>
-      <p class="rc-title">Prévia 6 — Arroz Cremoso de Frango com Milho e Queijo</p>
-      <p class="rc-desc">Frango desfiado, arroz cremoso, milho e queijo derretido. Uma receita prática para aproveitar ingredientes simples e variar o cardápio.</p>
-      <p class="rc-cap">Página interna do livro — Toque para ampliar.</p>
     </div>
   </div>
+  <p class="carousel-hint">ARRASTE PARA VER MAIS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></p>
 
   <!-- RESULTS -->
   <section class="results">
@@ -122,7 +105,7 @@
       <div class="result-card"><div class="ph">[FOTO 4] Marmita de macarrão à bolonhesa com queijo.</div></div>
     </div>
     <p class="results-note">Inserir fotos reais das receitas preparadas, identificadas como demonstrações do produto, ou fotos enviadas por clientes com autorização.</p>
-    <a href="#" class="btn-cta" style="max-width:none;">
+    <a href="#" class="btn-cta" style="max-width:none;" data-open-upsell>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       QUERO MINHAS 150 MARMITAS
     </a>
@@ -225,7 +208,7 @@
         <span class="from"><s>De R$ 197,00</s> · Pagamento Único</span>
         <span class="big">R$ 19,00</span>
       </div>
-      <a href="#" class="btn-cta">
+      <a href="https://pay.wiapy.com/Yx2PoyyriwPB" class="btn-cta">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         QUERO O PACOTE COMPLETO
       </a>
@@ -250,7 +233,7 @@
         <span class="from"><s>De R$ 97,00</s> · Pagamento Único</span>
         <span class="big">R$ 10,00</span>
       </div>
-      <a href="#" class="btn-cta" id="btn-basico">
+      <a href="#" class="btn-cta" id="btn-basico" data-open-upsell>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         QUERO MINHAS 150 MARMITAS
       </a>
@@ -325,7 +308,7 @@
       </div>
     </div>
 
-    <a href="#" class="btn-cta">
+    <a href="#" class="btn-cta" data-open-upsell>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       QUERO MINHAS 150 MARMITAS GOURMET
     </a>
@@ -387,7 +370,7 @@
     <p class="ask">Ainda não garantiu sua oferta?</p>
     <p class="punch">Chega de gastar com delivery ou levar marmita sem graça para o trabalho!</p>
     <p class="ctext">Tenha 150 ideias para preparar refeições gostosas, econômicas e variadas, com ingredientes simples que você encontra em qualquer mercado.</p>
-    <a href="#" class="btn-cta">
+    <a href="#" class="btn-cta" data-open-upsell>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       QUERO MINHAS 150 MARMITAS GOURMET
     </a>
@@ -432,13 +415,13 @@
     </div>
 
     <!-- LINK A DEFINIR: checkout do Plano Completo com desconto -->
-    <a href="#" class="btn-cta" id="link-completo-desconto">
+    <a href="https://pay.wiapy.com/yEpYzU5j_Bu1" class="btn-cta" id="link-completo-desconto">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       QUERO COM DESCONTO
     </a>
 
     <!-- LINK A DEFINIR: checkout do Plano Básico -->
-    <a href="#" class="modal-decline" id="link-basico">Não, quero só o Plano Básico por R$ 10,00</a>
+    <a href="https://pay.wiapy.com/J4BeALBKn1y" class="modal-decline" id="link-basico">Não, quero só o Plano Básico por R$ 10,00</a>
   </div>
 </div>
 

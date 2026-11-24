@@ -49,8 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Popup de upsell: abre ao clicar no botão do Plano Básico
-  var btnBasico = document.getElementById('btn-basico');
+  // Popup de upsell: abre em qualquer botão com [data-open-upsell]
   var modal = document.getElementById('modal-upsell');
   var modalClose = document.getElementById('modal-close');
 
@@ -67,10 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = '';
   }
 
-  if (btnBasico && modal) {
-    btnBasico.addEventListener('click', function (e) {
-      e.preventDefault();
-      abrirModal();
+  if (modal) {
+    document.querySelectorAll('[data-open-upsell]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        abrirModal();
+      });
     });
   }
   if (modalClose) {
